@@ -1,0 +1,290 @@
+/* ----- 1550px and below (still full layout) ----- */
+@media (max-width: 1500px) {
+  .layout {
+    justify-content: space-between;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .leftbar {
+    width: 230px;
+  }
+
+  .nav-middle {
+    width: 380px;
+  }
+
+  .subject {
+    font-size: 1.5rem;
+  }
+
+  .mesg-text {
+    font-size: 1.1rem;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 10px;
+  }
+  .subject {
+    width: 80px;
+  }
+  .mesg-text {
+    width: 80px;
+  }
+}
+
+/* ----- 1024px (Tablet view) ----- */
+@media (max-width: 1024px) {
+  .layout {
+    overflow: hidden;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .nav-left {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-middle {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .nav-right {
+    width: auto;
+    gap: 10px;
+  }
+
+  .leftbar {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    border-top: 1px solid #ddd;
+    background-color: #f8fafd;
+    display: none;
+  }
+
+  .leftbar .compose-btn {
+    width: 140px;
+    height: 60px;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .rightbar {
+    display: none;
+  }
+
+  .sender,
+  .subject,
+  .mesg-text,
+  .time {
+    font-size: 1rem;
+  }
+}
+
+/* ----- 800px (Small tablet / large phone) ----- */
+@media (max-width: 800px) {
+    .layout{
+        overflow: hidden;
+    }
+    .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .nav-middle {
+    width: 90%;
+    margin-top: 8px;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .leftbar {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+  }
+
+  .compose-btn {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+  }
+  .snd-line .social-header {
+    display: none;
+  }
+  .box3 .boxtext {
+    display: none;
+  }
+
+  .inbox,
+  .starred,
+  .snoozed,
+  .sent,
+  .draft,
+  .purchases,
+  .more {
+    display: none;
+    width: 45%;
+    font-size: 1rem;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .snd-line {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .mail-item {
+    gap: 10px;
+  }
+
+  .sender,
+  .subject,
+  .mesg-text,
+  .time {
+    font-size: 1rem;
+  }
+
+  .iconn {
+    /* display: none; */
+    font-size: 0.8rem;
+  }
+}
+/* ----- 500px (Mobile phones) ----- */
+@media (max-width: 550px) {
+  .layout {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-left img {
+    width: 90px;
+  }
+
+  .nav-middle {
+    width: 80%;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .leftbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-bottom: 10px;
+    display: none;
+  }
+
+  .compose-btn {
+    width: 110px;
+    height: 45px;
+    font-size: 0.9rem;
+    display: none;
+  }
+
+  .left-options {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .inbox,
+  .starred,
+  .snoozed,
+  .sent,
+  .draft,
+  .purchases,
+  .more {
+    width: 80%;
+    display: none;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .lable {
+    margin-top: 10px;
+    padding: 5px;
+    justify-content: center;
+    /* display: none; */
+  }
+
+  .bottom-btn {
+    margin-top: 20px;
+    justify-content: center;
+    /* display: none; */
+  }
+
+  .main-section {
+    margin: 0;
+    border-radius: 0;
+     display: flex; 
+    overflow-x: hidden;
+     
+  }
+
+  .snd-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .mail-item {
+    height: 8%;
+    width: 90%;
+    flex-shrink: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .box2,
+  .first-line {
+    display: none;
+  }
+
+  .sender,
+  .subject,
+  .mesg-text,
+  .time {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .iconn {
+    display: none;
+  }
+  .rightbar {
+    display: none;
+  }
+}
